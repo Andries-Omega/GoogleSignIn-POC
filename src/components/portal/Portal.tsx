@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { GoogleLogout } from "react-google-login";
 import { useNavigate } from "react-router";
-import "../../App.css";
-import { SignedInUser } from "../../core/interface/user";
+import styles from "src/App.css";
+import { SignedInUser } from "@interfaces/user";
+
 export default function Portal(props: { handleIsSignedIn: Function }) {
   const { handleIsSignedIn } = props;
 
