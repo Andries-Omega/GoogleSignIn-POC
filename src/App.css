@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components{
+  .app{
+    @apply h-screen w-screen bg-slate-900 flex justify-center items-center
+  }
+  .error{
+    @apply text-red-500 text-sm font-bold text-center
+  }
+}
