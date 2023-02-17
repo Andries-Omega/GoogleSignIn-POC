@@ -6,7 +6,6 @@ import {
 } from "react-google-login";
 
 import { useNavigate } from "react-router";
-import styles from "src/App.css";
 import "./sign-in.css";
 export default function SignIn(props: { handleIsSignedIn: Function }) {
   const { handleIsSignedIn } = props;
@@ -39,9 +38,7 @@ export default function SignIn(props: { handleIsSignedIn: Function }) {
   return (
     <div className="sign-in">
       <h1 className="sign-in-title">Sign In</h1>
-      {!signInFailed && (
-        <p className="error">Failed to sign in, please zama gape</p>
-      )}
+      {!signInFailed && <p className="error">Failed to sign in, Try again</p>}
       <GoogleLogin
         clientId={clientId}
         buttonText="Continue with google"
